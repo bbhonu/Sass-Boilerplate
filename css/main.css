@@ -1,19 +1,55 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -54px;
+}
+#root #root_footer {
+  height: 54px;
+}
+
+#footer {
+  clear: both;
+  position: relative;
+  height: 54px;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  height: 1080px;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
 
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -23,28 +59,21 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
  * A better looking default horizontal rule
  */
-
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -52,91 +81,368 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
 audio,
 canvas,
 iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
  * Remove default fieldset styles.
  */
-
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
  * Allow only vertical resizing of textareas.
  */
-
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+html, body {
+  height: 100%;
+}
 
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -54px;
+}
+#root #root_footer {
+  height: 54px;
+}
 
+#footer {
+  clear: both;
+  position: relative;
+  height: 54px;
+}
 
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+}
 
+.container {
+  background-color: white;
+}
 
+h2, h3 {
+  font-family: 'lato';
+  color: #0b0740;
+  text-transform: uppercase;
+}
 
+h1 {
+  font-size: 60px;
+  margin-left: 20px;
+  padding-top: 30px;
+  font-family: "times", sans-serif;
+  color: #0b0740;
+}
 
+h2 {
+  margin-bottom: 20px;
+}
 
+h3 {
+  margin-bottom: 10px;
+}
 
+section, p, h2, h3, blockquote, aside {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
+p, blockquote {
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
 
+span {
+  font-size: 9px;
+  font-family: "lato";
+  font-weight: lighter;
+  letter-spacing: .5px;
+  margin-top: -10px;
+}
 
+span.socials {
+  margin-left: 800px;
+  margin-top: -30px;
+}
+span.socials i {
+  margin-top: -130px;
+  font-size: 40px;
+  margin-right: 10px;
+}
 
+.fa-facebook-square:hover {
+  color: #bcf3f4;
+}
 
+.fa-twitter-square:hover {
+  color: #bcf3f4;
+}
 
+.fa-yelp:hover {
+  color: #bcf3f4;
+}
 
+#promo {
+  margin-top: -20px;
+  margin-bottom: -6px;
+  line-height: 15px;
+}
 
+li.addy:hover {
+  background-color: transparent;
+}
+
+.line {
+  background-color: #0b0740;
+  width: 250px;
+  height: 1px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p.test {
+  font-style: italic;
+}
+
+section.home {
+  font-family: "lato";
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 20px;
+}
+
+h2.home {
+  font-style: normal;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: #0b0740;
+  font-family: "times", sans-serif;
+}
+
+blockquote {
+  margin-bottom: 30px;
+  width: 600px;
+  text-align: justify;
+  margin: auto;
+}
+
+a:link {
+  text-decoration: none;
+  color: #0b0740;
+}
+
+a:visited {
+  color: #0b0740;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #0b0740;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+nav {
+  margin-bottom: 40px;
+  box-shadow: 0px 3px 29px #888888;
+}
+nav ul {
+  background-color: #e4dbb9;
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-family: 'lato';
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  padding-top: 200px;
+}
+
+span.socials {
+  width: 15.25424%;
+  float: right;
+  margin-right: 0;
+}
+
+section.home {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+aside.home {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+  margin-top: -250px;
+}
+
+@media (min-width: 900px) and (max-width: 3000px) {
+  body {
+    background: #060424;
+  }
+}
+@media (min-width: 570px) and (max-width: 899px) {
+  body {
+    background: white;
+  }
+
+  main {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    margin-right: 50px;
+  }
+
+  span.socials {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+  }
+
+  section.home {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 300px;
+  }
+
+  aside.home {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1px) and (max-width: 570px) {
+  body {
+    background: white;
+  }
+
+  main {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  span.socials {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+  }
+  span.socials i {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+  nav ul li {
+    margin-right: 0px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  section.home {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 300px;
+  }
+
+  aside.home {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
-
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 /*
  * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /*
@@ -144,23 +450,21 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -174,15 +478,16 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -190,93 +495,88 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition */
 }
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media print, (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  p:first-line,
+  div:first-line,
+  blockquote:first-line,
+  li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+       http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
 
-    thead {
-        display: table-header-group;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
