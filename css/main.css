@@ -285,8 +285,12 @@ li:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
 nav {
-  margin-bottom: 40px;
   box-shadow: 0px 3px 29px #888888;
 }
 nav ul {
@@ -321,12 +325,19 @@ section.home {
   float: left;
   margin-right: 1.69492%;
 }
+section.home img {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 960px;
+}
 
 aside.home {
   width: 32.20339%;
   float: right;
   margin-right: 0;
-  margin-top: -250px;
+  margin-top: -300px;
 }
 
 @media (min-width: 900px) and (max-width: 3000px) {
